@@ -35,7 +35,7 @@
                 $note = str_replace(".md","",$note);
                 $filename = str_replace(" ", "-", $note);
                 echo "<li>$note <br>
-                <br><a href='view/$filename'>📜 View this note</a><br><a href='edit/$filename'>🖋 Edit this note</a> <br><a href='delete/$filename'>🗑 Delete this note</a></li>";
+                <br><a href='view/$filename'>📜 View this note</a><br><a href='edit/$filename'>🖋 Edit this note</a> <br><a href='delete/$filename'>🗑 Delete this note</a></li><br>";
             }
         }
         echo "</ol>";
