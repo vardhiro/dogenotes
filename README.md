@@ -1,6 +1,6 @@
 # dogenotes
 Simple Notetaker app in PHP. 
-This notetaker app uses flat-file system and a markdown converter written by **Emanuel Rusev**
+This notetaker app uses flat-file system and a markdown converter written by **Emanuil Rusev**
 
 ## Requisities 
 
