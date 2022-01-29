@@ -31,7 +31,8 @@
     ?>
     <?php
         $file = fopen("./notes/$filename.md", "r");
-        $content = fread($file, 20000000);
+        $content = str_replace("<", "&lt;",fread($file, 20000000));
+        $content = str_replace(">", "&gt;",$content);
         require_once('md.php');
         $parsedown = new Parsedown();
     ?>
