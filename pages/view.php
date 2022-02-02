@@ -31,11 +31,13 @@
     ?>
     <?php
         $file = fopen("./notes/$filename.md", "r");
-        $content = str_replace("<", "&lt;",fread($file, 20000000));
-        $content = str_replace(">", "&gt;",$content);
+        $content = fread($file, 20000000);
         require_once('md.php');
         $parsedown = new Parsedown();
+	$content = $parsedown->text($content);
+	$content = str_replace("<", "&lt;", $content);
+	$content = str_replace(">", "&gt;", $content); 
     ?>
-    <p><?php echo $parsedown->text($content); ?></p>
+    <p><?php echo $content ?></p>
 </body>
 </html>
