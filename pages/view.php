@@ -8,10 +8,7 @@
         *{
             font-family: Ubuntu, Verdana;
         }
-        li{
-            font-size: 1.25rem;
-            text-transform: capitalize;
-        }
+  
         a{
             color: blue;
             text-decoration: none;
