@@ -28,9 +28,9 @@ if(isset($_POST['title']) && isset($_POST['content']))
         $file = fopen("./notes/$title.md", "w");
         fwrite($file, $content);
         fclose($file);
-        echo "<script>Note created !</script>";
+        echo "<script>alert("Note created !")</script>";
     }else{
-        echo "<script>Change the title! Note with same title exists</script>";
+        echo "<script>alert("Change the title! Note with same title exists")</script>";
     }
 }
 ?>
